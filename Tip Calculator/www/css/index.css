@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgreen;
+}
+
+div.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+@media (min-height: 550px) {
+  div.app {
+    justify-content: space-around;
+  }
+}
+
+div#select {
+  text-align: center;
+}
+
+select {
+  padding: 8px 12px;
+  width: 100px;
+  text-align: center;
+  color: #333333;
+  background-color: #eeeeee;
+  outline: none;
+  border: 2px solid #bbbbbb;
+  border-radius: 5px;
+}
+select option {
+  background: #ffffff;
+}
+
+ul {
+  padding: 5px;
+  list-style: none;
+}
+
+li {
+  margin: 10px 0 10px 0;
+}
+
+div#radio {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+label {
+  margin-left: 10px;
+}
+
+span {
+  margin-left: 20px;
+  float: right;
+  color: rgb(121, 133, 248);
+}
+
+input[type="radio"] {
+  background-color: rgb(217, 255, 217);
+}
+
+p {
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+div#calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#calculator {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  border: 2px solid black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: auto;
+  font-size: 20px;
+  background-color: rgb(217, 255, 217);
+  height: 25px;
+}
+
+input#customN {
+  margin-left: 20px;
+  float: right;
+  width: 25%;
+  height: 20;
+  background-color: rgb(217, 255, 217);
+}
