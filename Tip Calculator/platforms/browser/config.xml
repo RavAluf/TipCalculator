@@ -8,10 +8,10 @@
     </feature>
     <name>Tip Calculator</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        This application, will calculate your tips!
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="vinay.ory@gmail.com" href="http://phonegap.com">
+        TheProDev Team
     </author>
     <content src="index.html" />
     <access origin="*" />

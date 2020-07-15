@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: lightgreen;
+  background-color: rgb(230, 230, 230);
 }
 
 div.app {
@@ -40,12 +40,18 @@ select option {
 }
 
 ul {
+  width: 100%;
+  max-width: 800px;
   padding: 5px;
   list-style: none;
 }
 
 li {
-  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  height: 40px;
 }
 
 div#radio {
@@ -58,18 +64,61 @@ div#radio {
   font-weight: bold;
 }
 
-label {
-  margin-left: 10px;
+label.Radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  margin-left: 0px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
 }
 
-span {
+span.customRadio {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: none;
+  outline: none;
+  border: 3px solid #00aeff;
+  display: block;
+  position: absolute;
+  left: 10px;
+}
+span.customRadio::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  outline: none;
+  background: #00aeef;
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  transform: translate(0, 0) scale(0);
+  border-radius: 50%;
+  transition: 300ms ease-in-out 0s;
+}
+
+input[type="radio"]:checked ~ span.customRadio::after {
+  transform: translate(0, 0) scale(1);
+}
+
+label {
+  margin-left: 30px;
+  user-select: none;
+}
+
+#Span {
   margin-left: 20px;
   float: right;
   color: rgb(121, 133, 248);
 }
 
 input[type="radio"] {
-  background-color: rgb(217, 255, 217);
+  background-color: white;
 }
 
 p {
@@ -78,6 +127,10 @@ p {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
+}
+
+input[type="radio"] {
+  display: none;
 }
 
 div#calculator {
@@ -96,20 +149,27 @@ div#calculator {
   font-weight: bold;
 }
 
-input[type="number"] {
-  border: 2px solid black;
+input[type="number"]#text {
+  border: 2px solid rgb(170, 170, 170);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  width: auto;
+  width: 300px;
   font-size: 20px;
-  background-color: rgb(217, 255, 217);
-  height: 25px;
+  background-color: white;
+  height: 35px;
+  border-radius: 5px;
 }
 
 input#customN {
-  margin-left: 20px;
+  margin-left: 97px;
+  border: 2px solid rgb(170, 170, 170);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  height: 28px;
+  border-radius: 5px;
   float: right;
+  height: 31;
   width: 25%;
-  height: 20;
-  background-color: rgb(217, 255, 217);
+  background-color: white;
 }

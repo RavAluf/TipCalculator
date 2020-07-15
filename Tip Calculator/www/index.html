@@ -39,20 +39,37 @@
         <p class="texts">Please select your type:</p>
         <ul>
             <li>
-            <input type="radio" id="waiter" name="radio" value="1" checked />
-            <label for="waiter" class="texts">Waiter <span id="Span">15%</span></label>
+              <label class="Radio">
+                <input type="radio" id="waiter" name="radio" value="1" checked />
+                <span class="customRadio"></span>
+                <label for="waiter" class="texts">Waiter</label>
+              </label>
+              <span id="Span">15%</span>
             </li>
             <li>
-            <input type="radio" id="pizza" name="radio" value="2" />
-            <label for="pizza" class="texts">Pizza Delivery <span id="Span">10%</span></label>
+              <label class="Radio">
+                <input type="radio" id="pizza" name="radio" value="2" />
+                <span class="customRadio"></span>
+                <label for="pizza" class="texts">Pizza Delivery</label>
+              </label>
+              <span id="Span">10%</span>
             </li>
             <li>
-            <input type="radio" id="super" name="radio" value="3" />
-            <label for="super" class="texts">Supermarket Delivery <span id="Span">7%</span></label>
+              <label class="Radio">
+                <input type="radio" id="super" name="radio" value="3" />
+                <span class="customRadio"></span>
+                <label for="super" class="texts">Supermarket Delivery</label>
+              </label>
+              <span id="Span">7%</span>
             </li>
             <li>
-            <input type="radio" id="custom" name="radio" value="4" />
-            <label for="custom" class="texts">Custom: <span id="Span">%</span><input type="number" id="customN" class="textboxs" readonly></input></label>
+              <label class="Radio">
+                <input type="radio" id="custom" name="radio" value="4" />
+                <span class="customRadio"></span>
+                <label for="custom" class="texts">Custom:</label>
+              </label>
+              <input type="number" id="customN" class="textboxs" readonly></input>
+              <span id="Span">%</span>
             </li>
         </ul>
     </div>

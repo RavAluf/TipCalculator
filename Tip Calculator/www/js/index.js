@@ -46,12 +46,12 @@ function bgChange() {
   var input = document.getElementsByClassName("textboxs");
 
   if (select.value === "Light") {
-    body.style.background = "lightgreen";
+    body.style.background = "rgb(230, 230, 230)";
     for (var i = 0; i < texts.length; i++) {
       texts[i].style.color = "black";
     }
     for (var i = 0; i < input.length; i++) {
-      input[i].style.background = "rgb(217, 255, 217)";
+      input[i].style.background = "white";
     }
     result.style.color = "black";
   }
