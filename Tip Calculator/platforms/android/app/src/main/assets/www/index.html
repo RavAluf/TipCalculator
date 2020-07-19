@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"
+    />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+    />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Tip Calculator</title>
+  </head>
+
+  <body id="body">
+    <div class="app">
+        <div id="select">
+            <select id="bgSelect" onchange="bgChange()">
+                <option value="Light">Light</option>
+                <option value="Dark">Dark</option>
+            </select>
+        </div>
+        <div id="radio">
+        <p class="texts">Please select your type:</p>
+        <ul>
+            <li>
+              <label class="Radio">
+                <input type="radio" id="waiter" name="radio" value="1" checked />
+                <span class="customRadio"></span>
+                <label for="waiter" class="texts">Waiter</label>
+              </label>
+              <span id="Span">15%</span>
+            </li>
+            <li>
+              <label class="Radio">
+                <input type="radio" id="pizza" name="radio" value="2" />
+                <span class="customRadio"></span>
+                <label for="pizza" class="texts">Pizza Delivery</label>
+              </label>
+              <span id="Span">10%</span>
+            </li>
+            <li>
+              <label class="Radio">
+                <input type="radio" id="super" name="radio" value="3" />
+                <span class="customRadio"></span>
+                <label for="super" class="texts">Supermarket Delivery</label>
+              </label>
+              <span id="Span">7%</span>
+            </li>
+            <li>
+              <label class="Radio">
+                <input type="radio" id="custom" name="radio" value="4" />
+                <span class="customRadio"></span>
+                <label for="custom" class="texts">Custom:</label>
+              </label>
+              <input type="number" id="customN" class="textboxs" readonly></input>
+              <span id="Span">%</span>
+            </li>
+        </ul>
+    </div>
+
+    <div id="calculator">
+      <input type="number" id="text" class="textboxs" />
+      <p id="result">0.00₪</p>
+    </div>
+    </div>
+
+    <!--<script type="text/javascript" src="cordova.js"></script>-->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>
