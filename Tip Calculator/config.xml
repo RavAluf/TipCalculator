@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.codemojo.tipcalculator" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Tip Calculator</name>
     <description>
         This application, will calculate your tips!
     </description>
-    <author email="vinay.ory@gmail.com" href="http://phonegap.com">
-        TheProDev Team
+    <author email="codemojo1@gmail.com" href="#">
+        CodeMojo Team
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
