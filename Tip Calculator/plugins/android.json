@@ -10,9 +10,6 @@
     "cordova-plugin-battery-status": {
       "PACKAGE_NAME": "org.codemojo.tipcalculator"
     },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "org.codemojo.tipcalculator"
-    },
     "cordova-plugin-console": {
       "PACKAGE_NAME": "org.codemojo.tipcalculator"
     },
